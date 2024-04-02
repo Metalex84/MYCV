@@ -47,18 +47,59 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="text-center mb-5">
-                    <h1 class="mb-0">Alejandro Gonzalez Venegas</h1>
-                    <h2 class="mb-0">Desarrollador de Aplicaciones</h2>
+                    <h1 class="mb-0">Experiencia profesional</h1>
                 </div>
                 <section class="resume-section">
-                    <h2 class="mb-5">Experiencia Laboral</h2>
                     <div class="resume-item mb-4">
-                        <h3>Título del trabajo</h3>
-                        <p class="mb-0">Nombre de la empresa - Ubicación | Fecha de inicio - Fecha de finalización</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu velit vitae risus
-                            efficitur luctus. </p>
+                        <h2 class="mb-5">2024 - Actualidad: <b>Horeca Rentable</b></h2>
+                        <h3><i>Prácticas - Software Developer & IT Management</i></h3>
+                        <p class="mb-0">Reportando a Dirección:</p>
+                        <ul>
+                            <li>Desarrollo y despliegue de aplicaciones in-house para uso interno de la organización
+                                (Python, Flask, Selenium)</li>
+                            <li>Mantenimiento y vigilancia de la plataforma y el dominio corporativo (GetSpace)</li>
+                        </ul>
                     </div>
-                    <!-- Más experiencias laborales aquí -->
+                </section>
+                <section class="resume-section">
+                    <div class="resume-item mb-4">
+                        <h2 class="mb-5">2020 - 2022: <b>Freelance</b></h2>
+                        <h3><i>Copywriter</i></h3>
+                        <p class="mb-0">Redactor de contenidos autónomo. Cliente principal: <a
+                                href="https://www.publisuites.com/" target="_blank">Publisuites</a></p>
+                        <ul>
+                            <li>Redacción de artículos como parte de la estrategia de Inbound Marketing de los
+                                anunciantes</li>
+                            <li>Adecuación de textos según palabras claves, enlazado, longitud deseada, público
+                                objetivo...</li>
+                        </ul>
+                        <h3><i>Key Account Manager</i></h3>
+                        <p class="mb-0">Representante comercial de <a href="https://www.workopy.com/"
+                                target="_blank">Workopy</a>, distribuidor autorizado de máquinas Kyocera en coste por
+                            copia</p>
+                        <br>
+                        <h3><i>Traductor</i></h3>
+                        <p class="mb-0">Traductor autónomo EN->ES. Cliente principal: <a href="https://montero-ls.com/"
+                                target="_blank">Montero Language Services</a></p>
+                        <br>
+                    </div>
+                </section>
+                <section class="resume-section">
+                    <div class="resume-item mb-4">
+                        <h2 class="mb-5">2017 - 2019: <b><a href="https://www.v-valley.com/es/" target="_blank">GTI
+                                    Software & Networking</a></b></h2>
+                        <h3><i>Product Marketing Manager</i></h3>
+                        <p class="mb-0">Reportando al Director de División:</p>
+                        <ul>
+                            <li>Diseño de planes de marketing y publicidad en sintonía con la identidad de la marca</li>
+                            <li>Asistencia en la ejecución del plan anual de marketing del área Microsoft CSP</li>
+                            <li>Gestión del presupuesto asignado para las tareas de cada actividad del plan de marketing
+                            </li>
+                            <li>Participación en propuestas de estrategias de captación y fidelización de clientes</li>
+                            <li>Planificación e implementación de campañas de estrategia comercial</li>
+                            <li>Elaboración de reportes, métricas e indicadores para la Dirección de la División</li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </div>
@@ -67,6 +108,28 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <a href="#" class="btn btn-primary back-to-top" id="back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Script para el botón de volver arriba. Revisar, porque no coge lo del scroll automático!!! -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // Verifica si el usuario ha hecho scroll hasta el final de la página
+                if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
