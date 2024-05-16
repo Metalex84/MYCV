@@ -1,12 +1,14 @@
 body,
-h2 {
-    background-color: black;
-    color: white;
+h2
+{
+    background-color: white;
+    color: darkblue;
 }
 
+
 .inverted {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: darkblue;
 }
 
 .resume-section {
@@ -14,8 +16,8 @@ h2 {
 }
 
 .footer {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: darkblue;
     padding: 20px 0;
     text-align: center;
 }
