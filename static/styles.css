@@ -19,8 +19,38 @@
 
 body {
     background-color: #5B0888;
-    /*color: white;*/
+}
 
+.text_light {
+    color: #E5CFF7;
+}
+
+.text_dark {
+    color: #5B0888;
+}
+
+.text_semilight {
+    color: #9D76C1;
+}
+
+.text_semidark {
+    color: #713ABE;
+}
+
+.back_light {
+    background-color: #E5CFF7;
+}
+
+.back_semilight {
+    background-color: #9D76C1;
+}
+
+.back_dark {
+    background-color: #5B0888;
+}
+
+.back_semidark {
+    background-color: #713ABE;
 }
 
 .inverted {
