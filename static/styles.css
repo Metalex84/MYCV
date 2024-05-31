@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: #5B0888;
+    background: linear-gradient(180deg, #713ABE, #5B0888);
 }
 
 .text_light {
