@@ -18,26 +18,34 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.btn-info {
+.btn-custom {
     background-color: #5B0888; 
     color: #E5CFF7;
     border-color: #713ABE;
 }
 
-.btn-info:hover {
+.btn-custom:hover {
     background-color: #E5CFF7;
     color: #5B0888;
-    transform: scale(1.30); 
+    transform: scale(1.20); 
     transition: transform 0.3s ease-in-out;
 }
 
+.btn-custom:active {
+    background-color:#9D76C1;
+
+}
+.btn-custom:focus {
+    background-color:#9D76C1;
+}
+
 .btn-dark:hover {
-    transform: scale(1.30); 
+    transform: scale(1.20); 
     transition: transform 0.3s ease-in-out;
 }
 
 .btn-light:hover {
-    transform: scale(1.30); 
+    transform: scale(1.20); 
     transition: transform 0.3s ease-in-out;
 }
 
