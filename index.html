@@ -21,80 +21,83 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light back_dark">
-    <div class="container">
-      <a class="navbar-brand btn btn-secondary" role="button" href="./index.html">Inicio</a>
+      <a class="navbar-brand btn btn-custom" role="button" href="./index.html">Inicio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link btn btn-secondary" role="button" href="./presentation.html">Presentación</a>
+            <a class="nav-link btn btn-custom" role="button" href="./presentation.html">Presentación</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-secondary" role="button" href="./academic.html">Estudios</a>
+            <a class="nav-link btn btn-custom" role="button" href="./academic.html">Estudios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-secondary" role="button" href="./experience.html">Experiencia</a>
+            <a class="nav-link btn btn-custom" role="button" href="./experience.html">Experiencia</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="mailto:agonzalez.venegas@outlook.com" class="btn btn-custom btn-info">
+              <i class="fas fa-envelope"></i> eMail</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-secondary" role="button" href="./contact.html">Contacto</a>
+            <a href="https://www.threads.net/@metalex84" target="_blank" class="btn btn-dark"><i class="fas fa-at"></i>Threads</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/alejandro-gonzalez-venegas/" target="_blank" class="btn btn-secondary" style="background-color: blue; color: white;">
+              <i class="fab fa-linkedin"></i>LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.github.com/metalex84" target="_blank" class="btn btn-light"><i class="fab fa-github"></i> GitHub</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="text-center mb-5">
-          <h1 class="mb-0 text_light">Alejandro Gonzalez Venegas</h1>
-          <br>
-          <h2 class="mb-0 text_light">Desarrollador de Aplicaciones</h2>
-          <br>
-          <h3 class="mb-0 text_light">Multiplataforma y web</h3>
-          <br>
-        </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="text-center mb-5">
+        <h1 class="mt-1 text_light">Alejandro Gonzalez Venegas</h1>
+        <h2 class="mb-2 text_light">Desarrollador de aplicaciones</h2>
+        <h3 class="mb-3 text_light">Multiplataforma y web</h3>
       </div>
     </div>
-  
+  </div>
 
-    <div class="container d-flex justify-content-center align-items-center">
-      <div class="row w-75">
-        <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
-          <a href="./presentation.html" class="btn btn-primary" role="button">
-            <h3>Presentación</h3>
-          </a>
-          <p class="lead">Un poco de mí y mis proyectos</p>
-        </div>
-        <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
-          <a href="./academic.html" class="btn btn-primary" role="button">
-            <h3>Estudios</h3>
-          </a>
-          <p class="lead">El detalle de mi historial académico, cursos, certificaciones...</p>
-        </div>
-        <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
-          <a href="./experience.html" class="btn btn-primary" role="button">
-            <h3>Experiencia</h3>
-          </a>
-          <p class="lead">Un resumen de mi trayectoria laboral</p>
-        </div>
-        <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
-          <a href="./contact.html" class="btn btn-primary" role="button">
-            <h3>Contacto</h3>
-          </a>
-          <p class="lead">Redes sociales, correo, teléfono...</p>
-        </div>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row w-75">
+      <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
+        <a href="./presentation.html" class="btn btn-primary" role="button">
+          <h3>Presentación</h3>
+        </a>
+        <p class="lead">Un poco de mí y mis proyectos</p>
+      </div>
+      <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
+        <a href="./academic.html" class="btn btn-primary" role="button">
+          <h3>Estudios</h3>
+        </a>
+        <p class="lead">El detalle de mi historial académico, cursos, certificaciones...</p>
+      </div>
+      <div class="col text-center p-3 rounded border mainbox" style="background-color: #9D76C1;">
+        <a href="./experience.html" class="btn btn-primary" role="button">
+          <h3>Experiencia</h3>
+        </a>
+        <p class="lead">Un resumen de mi trayectoria profesional</p>
       </div>
     </div>
+  </div>
 
 
-    <!-- Bootstrap JS (opcional si no necesitas funcionalidad JS de Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS (opcional si no necesitas funcionalidad JS de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
