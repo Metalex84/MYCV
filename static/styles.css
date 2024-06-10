@@ -54,7 +54,7 @@
 }
 
 .lead:hover {
-    color: #5B0888;
+    color: #9D76C1;
 }
 
 body {
@@ -134,3 +134,24 @@ body {
     transform: scale(1.05); 
     transition: transform 0.3s ease-in-out;
 }
+
+.container_flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    width: 100vw; /* Ancho del contenedor igual al viewport */
+    height: 100vh; /* Alto del contenedor igual al viewport */
+}
+
+.item {
+    flex: 1 0 50%; /* Cada elemento tomará el 50% del ancho disponible */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    padding: 20px; /* Espacio interno alrededor del contenido del elemento */
+    text-align: center; /* Centra el texto dentro del elemento */
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    .item {
+         flex-basis: 100%; /* Hace que cada elemento tome el 100% del ancho disponible en pantallas pequeñas */
+     }
+ }
