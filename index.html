@@ -1,105 +1,233 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALEJANDRO GONZALEZ - Mobile & Web Developer</title>
+
+<meta charset="UTF-8">
+<link rel="icon" href="./images/favicon-32x32.png">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/nav.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-  <!-- JS de Bootstrap y jQuery (necesario para los componentes interactivos de Bootstrap) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <link href="./static/styles.css" rel="stylesheet">
+<title>Alejandro Gonzalez</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light back_dark">
-    <a class="navbar-brand btn btn-custom" role="button" href="./index.html">Inicio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link btn btn-custom" role="button" href="./presentation.html">Presentación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-custom" role="button" href="./academic.html">Estudios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-custom" role="button" href="./experience.html">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-custom" role="button" href="./contact.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
+  <a name="top-of-document"></a>
 
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
-      <div class="text-center mb-5">
-        <p class="text-lg-center display-3">Alejandro Gonzalez Venegas</p>
-        <p class="text-lg-center display-5">Mobile & Web Developer</p>
-      </div>
+<!-- floating scroll to top navigator -->
+
+  <div class="to-top-navigator">
+
+    <div class="to-top-cloud" aria-label="Ir al inicio" aria-hidden="true">
+        <a href="javascript:scrollToAnchor('top-of-document')" data-toggle="tooltip" data-placement="left" title="Ir al inicio" onclick="javascript:toolTipReset()"><i class="fas fa-plane-departure"></i></a>
     </div>
+
+    <div>
+        <a href="javascript:scrollToPreviousSection()">
+        <span class="tcon-indicator" aria-label="Ir a la seccion previa antes del viewport" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Ir a la seccion anterior" onclick="javascript:toolTipReset()">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+            <path class="a1" d="M3,13l13-10l13,10"></path>
+            <path class="a2" d="M3,33l13-10l13,10"></path>
+            <path class="a3" d="M3,53l13-10l13,10"></path>
+            </svg>
+        </span>
+        </a>
+    </div>
+
   </div>
 
+  <!-- floating section indicators -->
 
-<section style="height: 5100vw;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="item">
-            <a href="./presentation.html" class="btn btn-primary" role="button">
-              <h3>Presentación</h3>
-            </a>
-            <p class="lead text_dark">Un poco de mí y mis proyectos</p>
-          </div>
+  <div class="section-indicators-block">
+
+    <div class="section-indicator">
+        <a id="bio-section-indicator" href="#" data-toggle="tooltip" data-placement="left" title="Inicio" onclick="javascript:toolTipReset()"><i class="fas fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="portfolio-section-indicator" href="javascript:scrollToAnchor('portfolio');" data-toggle="tooltip" data-placement="left" title="Porfolio" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="skill-summary-section-indicator" href="javascript:scrollToAnchor('skill-summary');" data-toggle="tooltip" data-placement="left" title="Habilidades" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="career-highlights-section-indicator" href="javascript:scrollToAnchor('career-highlights');" data-toggle="tooltip" data-placement="left" title="Experiencia" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="education-section-indicator" href="javascript:scrollToAnchor('education');" data-toggle="tooltip" data-placement="left" title="Formacion" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+    <div class="section-indicator">
+        <a id="contact-section-indicator" href="javascript:scrollToAnchor('contact');" data-toggle="tooltip" data-placement="left" title="Contacto" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
+    </div>
+
+  </div>
+
+  <!-- floating scroll down inviter -->
+
+  <div class="scroll-down-navigator">
+
+    <div>
+        <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="Scroll to next section outside of viewport" onclick="javascript:toolTipReset()">
+        <span class="tcon-indicator" aria-label="Scroll to next section outside of viewport" aria-hidden="true">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+            <path class="a3" d="M3,3l13,10l13-10"></path>
+            <path class="a2" d="M3,23l13,10l13-10"></path>
+            <path class="a1" d="M3,43l13,10l13-10"></path>
+            </svg>
+        </span>
+        </a>
+    </div>
+
+    <div class="scroll-down-plane" aria-label="Descend to the bottom!" aria-hidden="true">
+        <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left" title="Scroll to the bottom" onclick="javascript:toolTipReset()"><i class="fas fa-plane-arrival"></i></a>
+    </div>
+
+  </div>
+
+  <!-- end of navigation bar -->
+
+  <a name="bio"></a>
+  <div id="bio" class="container section-visual-boundry">
+
+      <div class="row justify-content-center">
+        
+        <div class="hero-div col-8 col-sm-4 col-md-4" >
+          <img class="hero" src="./images/AGV_Foto_CV.jpg" alt="portrait" />
         </div>
-        <div class="col-md-3">
-          <div class="item">
-            <a href="./academic.html" class="btn btn-primary" role="button">
-              <h3>Estudios</h3>
-            </a>
-            <p class="lead text_dark">El detalle de mi historial académico, cursos, certificaciones...</p>
-          </div>
+
+        <div class="col-12 col-sm-8 col-md-8">
+          <p class="page-title">Alejandro Gonzalez</p>
+          <p class="page-subtitle">Desarrollador de Aplicaciones</p>
+          <p class="bio-block">Tras mucho tiempo buscando mi sitio, he regresado al desarrollo de software, que fue donde mi carrera empezó. Donde otros se han <i>reinventado profesionalmente</i>, yo he <i>vuelto al origen</i>.</p>
+         
         </div>
-        <div class="col-md-3">
-          <div class="item">
-            <a href="./experience.html" class="btn btn-primary" role="button">
-              <h3>Experiencia</h3>
-            </a>
-            <p class="lead text_dark">Un resumen de mi trayectoria profesional</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="item">
-            <a href="./contact.html" class="btn btn-primary" role="button">
-              <h3>Contacto</h3>
-            </a>
-            <p class="lead text_dark">¿Hablamos?</p>
-          </div>
+      </div>
+
+  </div>
+
+  <hr />
+
+<a name="portfolio"></a>
+<p id="portfolio" class="section-heading section-visual-boundry">Proyectos</p>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col bm-2">
+      <div class="card h-100">
+        <img src="./images/androidbooklist.jpg" class="card-img-top" alt="App lista de lectura">
+        <div class="card-body">
+          <h5 class="card-title">Lista de lectura</h5>
+          <p class="card-text">Una sencilla aplicación para Android que recupera datos de libros y permite filtrarlos, consultar sus detalles y agregarlos a una lista de favoritos.</p>
+          <a href="https://github.com/Metalex84/AndroidBooklist" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
         </div>
       </div>
     </div>
-</section>
+    <div class="col bm-2">
+      <div class="card h-100">
+        <img src="./images/linkaut.png" class="card-img-top" alt="LinkedIn Automator">
+        <div class="card-body">
+          <h5 class="card-title">LinkedIn Automator</h5>
+          <p class="card-text"></p>
+          <a href="https://github.com/Metalex84/linkedin_automator" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="col bm-2">
+      <div class="card h-100">
+        <img src="./images/qrgen.png" class="card-img-top" alt="QR Generator">
+        <div class="card-body">
+          <h5 class="card-title">QR Generator</h5>
+          <p class="card-text">Un sencillo generador de codigos QR online.</p>
+          <a href="https://github.com/Metalex84/qr_generate" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
+          <a href="https://qr-generate-omcy.onrender.com/" target="_blank" class="btn btn-primary">Pruébalo</a>
+        </div>
+      </div>
+    </div>
+</div>
 
-  <!-- Bootstrap JS (opcional si no necesitas funcionalidad JS de Bootstrap) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<hr />
+
+<a name="skill-summary"></a>
+<p id="skill-summary" class="section-heading section-visual-boundry">Resumen de habilidades</p>
+
+<p data-toggle="tooltip" data-placement="bottom" 
+   title="Stack tecnológico"
+   onclick="javascript:toolTipReset()">
+    <span class="keyword-magnet">HTML</span>
+    <span class="keyword-magnet">CSS</span>
+    <span class="keyword-magnet">C</span>
+    <span class="keyword-magnet">C#</span>
+    <span class="keyword-magnet">Java</span>
+    <span class="keyword-magnet">Kotlin</span>
+    <span class="keyword-magnet">Swift</span>
+</p>
+
+<ul>
+    <li>Desarrollador web Full Stack</li>
+    <li>Desarrollador de aplicaciones móviles Android e iOS</li>
+</ul>
+
+<hr />
+
+<a name="career-highlights"></a>
+<p id="career-highlights" class="section-heading section-visual-boundry">Experiencia profesional</p>
+<p class="section-subheading">CTO & Full Stack Developer (Prácticas) en Horeca Rentable</p>
+<p class="section-small-heading">Las Rozas (Madrid) - En remoto</p>
+<ul>
+    <li>Reportando a Dirección, desarrollé íntegramente y desde cero la aplicación web <b>LinkedIn Automator</b>, para uso interno del equipo de Ventas (ver Proyectos)</li>
+    <li>También hice las veces de CTO, encargándome del mantenimiento de la plataforma y el dominio</li>
+    <li>Realicé una migración del correo electrónico corporativo y contribuí al posicionamiento SEO del sitio web.</li>
+</ul>
+
+<p class="section-subheading">CopyWriter Freelance</p>
+<p class="section-small-heading">100% en remoto</p>
+<ul>
+    <li>Creé contenido con intención de posicionamiento SEO para anunciantes, abordando diversas temáticas: Tecnología, Finanzas, Legal, Veterinaria, Psicología, RRHH…</li>
+</ul>
+
+<hr />
+
+<a name="education"></a>
+<p id="education" class="section-heading section-visual-boundry">Formación</p>
+<p class="section-subheading">CESUR Plaza Elíptica, Madrid</p>
+<p class="section-small-heading">Técnico Superior - Desarrollo de Aplicaciones Multiplataforma</p>
+<p><a href="./assets/cesur_academic_alex.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Expediente académico" onclick="javascript:toolTipReset()"">Expediente académico</a></p>
+
+<hr />
+
+<a name="contact"></a>
+<p id="contact" class="section-heading section-visual-boundry">Contacto</p>
+
+<p>Email: <a href="mailto:agonzalez.venegas@outlook.com" data-toggle="tooltip" data-placement="bottom" title="Envíame un email" onclick="javascript:toolTipReset()">agonzalez.venegas@outlook.com</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/alejandro-gonzalez-venegas" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Mi perfil en LinkedIn" onclick="javascript:toolTipReset()"">Alejandro Gonzalez Venegas</a></p>
+  
+<hr />
+
+<!-- <img class="hero" src="images/footer_banner.jpg" alt="banner" /> -->
+
+<a name="bottom-of-document"></a>
 </body>
 
-</html>
+<footer>
+    <p class="copyright-text">© Copyright 2024 Alejandro Gonzalez</p>
+</footer>
+
+<!-- JQuery Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!-- Our codes -->
+<script src="js/main.js"></script>
+<script src="js/nav.js"></script>
