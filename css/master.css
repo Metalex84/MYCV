@@ -25,6 +25,10 @@ a {
     color: #0027d2;
 }
 
+a.dark-mode {
+    color: #ff0;
+}
+
 [class~=card-title],
 a {
     font-weight: bold;
@@ -32,6 +36,10 @@ a {
 
 body {
     background-color: #ebe1e1;
+}
+
+body.dark-mode {
+    background-color: #2c2c2c;
 }
 
 [class~=bio-block],
@@ -49,6 +57,10 @@ body {
 
 a:hover {
     color: #f00;
+}
+
+a:hover.dark-mode {
+    color: #ff0;
 }
 
 [class~=card] {
@@ -331,6 +343,10 @@ body {
     overflow-x: hidden darkslategray;
 }
 
+body.dark-mode {
+    overflow-x: hidden lightgray;
+}
+
 [class~=keyword-magnet] {
     margin-right: .1em;
 }
@@ -379,12 +395,20 @@ hr {
     color: #161616;
 }
 
+[class~=page-subtitle].dark-mode {
+    color: #ff0;
+}
+
 hr {
     border-top-style: dotted;
 }
 
 hr {
     border-top-color: #b52580;
+}
+
+hr.dark-mode {
+    border-top-color: #ff0;
 }
 
 hr {
@@ -483,6 +507,10 @@ p {
     color: #494949;
 }
 
+p.dark-mode {
+    color: #ffa;
+}
+
 .section-small-heading,
 [class~=section-heading] {
     margin-bottom: 1rem;
@@ -499,6 +527,10 @@ p {
 
 .section-small-heading {
     color: #595959;
+}
+
+.section-small-heading.dark-mode {
+    color: #ff0;
 }
 
 .section-small-heading {
@@ -524,6 +556,10 @@ ul li:before {
 
 [class~=section-subheading] {
     color: #010101;
+}
+
+[class~=section-subheading].dark-mode {
+    color: #ff0
 }
 
 [class~=section-subheading] {
@@ -579,12 +615,29 @@ a:hover {
     border-right-color: white;
 }
 
+[class~=tooltip]>[class~=tooltip-inner].dark-mode {
+    border-left-color: black;
+}
+
+[class~=tooltip]>[class~=tooltip-inner].dark-mode {
+    border-bottom-color: black;
+}
+
+[class~=tooltip]>[class~=tooltip-inner].dark-mode {
+    border-right-color: black;
+}
+
+
 [class~=section-divider] img {
     height: auto;
 }
 
 [class~=tooltip]>[class~=tooltip-inner] {
     border-top-color: white;
+}
+
+[class~=tooltip]>[class~=tooltip-inner].dark-mode {
+    border-top-color: black;
 }
 
 ul {
@@ -762,6 +815,10 @@ footer {
     color: #ff0;
 }
 
+[class~=weather-date].dark-mode {
+    color: #595959
+}
+
 [class~=weather-date] {
     font-size: 1.6rem;
 }
@@ -809,6 +866,10 @@ footer {
 
 [class~=weather-description] {
     color: white;
+}
+
+[class~=weather-description].dark-mode {
+    color: black;
 }
 
 [class~=weather-description],

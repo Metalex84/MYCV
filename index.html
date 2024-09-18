@@ -32,7 +32,7 @@
 
     <div>
         <a href="javascript:scrollToPreviousSection()">
-        <span class="tcon-indicator" aria-label="Ir a la seccion previa antes del viewport" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Ir a la seccion anterior" onclick="javascript:toolTipReset()">
+        <span class="tcon-indicator" aria-label="Prev section" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Arriba" onclick="javascript:toolTipReset()">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
             <path class="a1" d="M3,13l13-10l13,10"></path>
             <path class="a2" d="M3,33l13-10l13,10"></path>
@@ -79,8 +79,8 @@
   <div class="scroll-down-navigator">
 
     <div>
-        <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="Scroll to next section outside of viewport" onclick="javascript:toolTipReset()">
-        <span class="tcon-indicator" aria-label="Scroll to next section outside of viewport" aria-hidden="true">
+        <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="Abajo" onclick="javascript:toolTipReset()">
+        <span class="tcon-indicator" aria-label="Scroll down" aria-hidden="true">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
             <path class="a3" d="M3,3l13,10l13-10"></path>
             <path class="a2" d="M3,23l13,10l13-10"></path>
@@ -91,7 +91,7 @@
     </div>
 
     <div class="scroll-down-plane" aria-label="Descend to the bottom!" aria-hidden="true">
-        <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left" title="Scroll to the bottom" onclick="javascript:toolTipReset()"><i class="fas fa-plane-arrival"></i></a>
+        <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left" title="Ir al final" onclick="javascript:toolTipReset()"><i class="fas fa-plane-arrival"></i></a>
     </div>
 
   </div>
@@ -111,8 +111,13 @@
           <p class="page-title">Alejandro Gonzalez</p>
           <p class="page-subtitle">Desarrollador de Aplicaciones</p>
           <p class="bio-block">Tras mucho tiempo buscando mi sitio, he regresado al desarrollo de software, que fue donde mi carrera empezó. Donde otros se han <i>reinventado profesionalmente</i>, yo he <i>vuelto al origen</i>.</p>
-         
         </div>
+      </div>
+
+      <div class="hero-div col-8 col-sm-4 col-md-4" >
+        <button id="toggle-dark-mode" type="button" class="btn btn-secondary">
+          <img src="./images/emoji-sunglasses-fill.svg" alt="dark mode"/>
+        </button>
       </div>
 
   </div>
@@ -128,7 +133,7 @@
         <img src="./images/androidbooklist.jpg" class="card-img-top" alt="App lista de lectura">
         <div class="card-body">
           <h5 class="card-title">Lista de lectura</h5>
-          <p class="card-text">Una sencilla aplicación para Android que recupera datos de libros y permite filtrarlos, consultar sus detalles y agregarlos a una lista de favoritos.</p>
+          <p class="card-text">Una aplicación para Android que recupera datos de libros y permite filtrarlos, consultar sus detalles y editar una lista de favoritos.</p>
           <a href="https://github.com/Metalex84/AndroidBooklist" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
         </div>
       </div>
@@ -138,7 +143,7 @@
         <img src="./images/linkaut.png" class="card-img-top" alt="LinkedIn Automator">
         <div class="card-body">
           <h5 class="card-title">LinkedIn Automator</h5>
-          <p class="card-text"></p>
+          <p class="card-text">Un bot que hace web-scrapping en LinkedIn para visitar perfiles y añadir contactos automáticamente. Y respetando sus Términos y Condiciones.</p>
           <a href="https://github.com/Metalex84/linkedin_automator" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
         </div>
       </div>
@@ -149,7 +154,7 @@
         <img src="./images/qrgen.png" class="card-img-top" alt="QR Generator">
         <div class="card-body">
           <h5 class="card-title">QR Generator</h5>
-          <p class="card-text">Un sencillo generador de codigos QR online.</p>
+          <p class="card-text">Un sencillo generador de codigos QR online. Inserta una URL y obtendrás una imagen con el código, lista para escanear. Sin más.</p>
           <a href="https://github.com/Metalex84/qr_generate" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
           <a href="https://qr-generate-omcy.onrender.com/" target="_blank" class="btn btn-primary">Pruébalo</a>
         </div>
