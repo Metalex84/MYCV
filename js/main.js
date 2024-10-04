@@ -14,4 +14,39 @@ toggleButton.addEventListener('click', function() {
     } else {
         toggleButton.innerHTML = '<img src="./images/emoji-sunglasses-fill.svg" alt="dark mode"/>';
     }
+
+    const pageTitle = document.querySelector('.page-title');
+    pageTitle.classList.toggle('dark-mode');
+    
+    const pageSubtitle = document.querySelector('.page-subtitle');
+    pageSubtitle.classList.toggle('dark-mode');
+
+    const bioBlock = document.querySelector('.bio-block');
+    bioBlock.classList.toggle('dark-mode');
+
+    const sectionHeading = document.querySelectorAll('.section-heading');
+    sectionHeading.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const cardTitle = document.querySelectorAll('.card-title');
+    cardTitle.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const cardText = document.querySelectorAll('.card-text');
+    cardText.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const keywordMagnet = document.querySelectorAll('.keyword-magnet');
+    keywordMagnet.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const li = document.querySelectorAll('li');
+    li.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
 });
