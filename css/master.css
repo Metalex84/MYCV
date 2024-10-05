@@ -45,7 +45,7 @@ body.dark-mode {
 }
 
 a:hover {
-    color: #f00;
+    color: #b52580;
 }
 
 [class~=card] {
@@ -246,6 +246,14 @@ body {
 
 a:hover {
     font-weight: 700;
+}
+
+a {
+    color: #02027b;
+}
+
+a.dark-mode {
+    color: #fff;
 }
 
 body {
@@ -554,6 +562,10 @@ p {
     color: #595959;
 }
 
+.section-small-heading.dark-mode {
+    color: #fff;
+}
+
 .section-small-heading {
     font-size: 1.1em;
 }
@@ -583,8 +595,12 @@ li.dark-mode {
     color: #fff;
 }
 
-[class~=section-subheading] {
-    color: #010101;
+.section-subheading {
+    color: #010101
+}
+
+.section-subheading.dark-mode {
+    color: #ffc;
 }
 
 [class~=section-subheading] {
@@ -914,8 +930,12 @@ footer {
     margin-top: 0;
 }
 
-[class~=copyright-text] {
-    color: #aaa;
+.copyright-text {
+    color: #010101;
+}
+
+.copyright-text.dark-mode {
+    color: #ffc;
 }
 
 @media only screen and (max-width: 767px),

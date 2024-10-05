@@ -51,4 +51,17 @@ toggleButton.addEventListener('click', function() {
         element.classList.toggle('dark-mode');
     });
 
+    const sectionSubheading = document.querySelectorAll('.section-subheading');
+    sectionSubheading.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const sectionSmallHeading = document.querySelectorAll('.section-small-heading');
+    sectionSmallHeading.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
+    const copyrightText = document.querySelector('.copyright-text');
+    copyrightText.classList.toggle('dark-mode');
+
 });
