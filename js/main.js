@@ -69,4 +69,9 @@ toggleButton.addEventListener('click', function() {
         element.classList.toggle('dark-mode');
     });
 
+    const hrSeparator = document.querySelectorAll('.hr-separator');
+    hrSeparator.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
 });

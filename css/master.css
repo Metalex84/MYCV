@@ -363,8 +363,12 @@ hr {
     border-top-style: dotted;
 }
 
-hr {
+.hr-separator {
     border-top-color: #b52580;
+}
+
+.hr-separator.dark-mode {
+    border-top-color: #ff0;
 }
 
 hr {
