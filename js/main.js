@@ -64,4 +64,9 @@ toggleButton.addEventListener('click', function() {
     const copyrightText = document.querySelector('.copyright-text');
     copyrightText.classList.toggle('dark-mode');
 
+    const link = document.querySelectorAll('.link');
+    link.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
+
 });

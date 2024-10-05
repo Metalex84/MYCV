@@ -248,12 +248,12 @@ a:hover {
     font-weight: 700;
 }
 
-a {
+.link {
     color: #02027b;
 }
 
-a.dark-mode {
-    color: #fff;
+.link.dark-mode {
+    color: #ff0;
 }
 
 body {
