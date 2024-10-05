@@ -3,6 +3,15 @@
     margin-left: auto;
 }
 
+button {
+    width: 20em;
+    height: 5em;
+}
+
+img-toggle-mode {
+    width: 10rem;
+}
+
 ul li:before {
     content: "\2713";
 }
