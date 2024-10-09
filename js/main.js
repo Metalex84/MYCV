@@ -8,12 +8,10 @@ toggleButton.addEventListener('click', function() {
     // Alterna la clase 'dark-mode' en el body
     body.classList.toggle('dark-mode');
 
-    // Cambia el texto del botón dependiendo del modo actual
+    // Cambia el botón dependiendo del modo actual
     if (body.classList.contains('dark-mode')) {
-        // toggleButton.innerHTML = '<img src="./images/emoji-sunglasses.svg" alt="light mode"/>'
         toggleButton.innerHTML = '<img src="./images/emoji-sunglasses.svg" alt="light mode" class="img-toggle-mode"/><span id="mode-text"><p class="page-subtitle">Modo claro</p></span>';
     } else {
-        // toggleButton.innerHTML = '<img src="./images/emoji-sunglasses-fill.svg" alt="dark mode"/>';
         toggleButton.innerHTML = '<img src="./images/emoji-sunglasses-fill.svg" alt="dark mode" class="img-toggle-mode"/><span id="mode-text"><p class="page-subtitle">Modo oscuro</p></span>';
     }
 
