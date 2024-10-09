@@ -384,6 +384,16 @@ hr {
     margin-bottom: 2rem;
 }
 
+.form-check-input:checked {
+    background-color: #02027b; 
+    border-color: #ffc;
+}
+  
+.form-check-input {
+    background-color: #ffc;
+    border-color: #02027b;
+}
+
 .page-title {
     text-align: center;
     color: #02027b;
