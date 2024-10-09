@@ -8,10 +8,6 @@ button {
     height: 5em;
 }
 
-img-toggle-mode {
-    width: 10rem;
-}
-
 ul li:before {
     content: "\2713";
 }

@@ -10,19 +10,23 @@ toggleButton.addEventListener('click', function() {
 
     // Cambia el botón dependiendo del modo actual
     if (body.classList.contains('dark-mode')) {
-        toggleButton.innerHTML = '<img src="./images/emoji-sunglasses.svg" alt="light mode" class="img-toggle-mode"/><span id="mode-text"><p class="page-subtitle">Modo claro</p></span>';
+        toggleButton.innerHTML = '<div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="toggle-dark-mode" checked><label class="form-check-label" for="toggle-dark-mode"><p class="page-subtitle">Modo claro</p></label></div>';
     } else {
-        toggleButton.innerHTML = '<img src="./images/emoji-sunglasses-fill.svg" alt="dark mode" class="img-toggle-mode"/><span id="mode-text"><p class="page-subtitle">Modo oscuro</p></span>';
+        toggleButton.innerHTML = '<div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="toggle-dark-mode"><label class="form-check-label" for="toggle-dark-mode"><p class="page-subtitle.dark-mode">Modo oscuro</p></label></div>';
     }
 
     const pageTitle = document.querySelector('.page-title');
     pageTitle.classList.toggle('dark-mode');
     
-    const pageSubtitle = document.querySelector('.page-subtitle');
-    pageSubtitle.classList.toggle('dark-mode');
+    const pageSubtitle = document.querySelectorAll('.page-subtitle');
+    pageSubtitle.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
 
-    const bioBlock = document.querySelector('.bio-block');
-    bioBlock.classList.toggle('dark-mode');
+    const bioBlock = document.querySelectorAll('.bio-block');
+    bioBlock.forEach(element => {
+        element.classList.toggle('dark-mode');
+    });
 
     const sectionHeading = document.querySelectorAll('.section-heading');
     sectionHeading.forEach(element => {
