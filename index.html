@@ -3,330 +3,481 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="./images/favicon-32x32.png">
-<meta http-equiv=“Pragma” content=”no-cache”>
-<meta http-equiv=“Expires” content=”-1″>
-<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-<!-- CSS Stylesheets -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><link rel="stylesheet" href="css/master.css">
-<link rel="stylesheet" href="css/nav.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
-<title>Alejandro Gonzalez - Docente FP en Informática. Desarrollador de Software Python, Java, Kotlin (Android), C, C#</title>
+    <title>Alejandro Gonzalez - Docente FP en Informática. Desarrollador de Software Python, Java, Kotlin (Android), C,
+        C#</title>
 </head>
 
 <body>
 
-  <a name="top-of-document"></a>
+    <a name="top-of-document"></a>
 
-<!-- floating scroll to top navigator -->
+    <!-- floating scroll to top navigator -->
 
-  <div class="to-top-navigator">
+    <div class="to-top-navigator">
 
-    <div class="to-top-cloud" aria-label="Ir al inicio" aria-hidden="true">
-        <a href="javascript:scrollToAnchor('top-of-document')" data-toggle="tooltip" data-placement="left" title="Ir al inicio" onclick="javascript:toolTipReset()"><i class="fas fa-plane-departure"></i></a>
-    </div>
-
-    <div>
-        <a href="javascript:scrollToPreviousSection()">
-        <span class="tcon-indicator" aria-label="Prev section" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Arriba" onclick="javascript:toolTipReset()">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
-            <path class="a1" d="M3,13l13-10l13,10"></path>
-            <path class="a2" d="M3,33l13-10l13,10"></path>
-            <path class="a3" d="M3,53l13-10l13,10"></path>
-            </svg>
-        </span>
-        </a>
-    </div>
-
-  </div>
-
-  <!-- floating section indicators -->
-
-  <div class="section-indicators-block">
-
-    <div class="section-indicator">
-        <a id="bio-section-indicator" href="#" data-toggle="tooltip" data-placement="left" title="Inicio" onclick="javascript:toolTipReset()"><i class="fas fa-circle"></i></a>
-    </div>
-
-    <div class="section-indicator">
-        <a id="portfolio-section-indicator" href="javascript:scrollToAnchor('portfolio');" data-toggle="tooltip" data-placement="left" title="Porfolio" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
-    </div>
-
-    <div class="section-indicator">
-        <a id="skill-summary-section-indicator" href="javascript:scrollToAnchor('skill-summary');" data-toggle="tooltip" data-placement="left" title="Habilidades" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
-    </div>
-
-    <div class="section-indicator">
-        <a id="career-highlights-section-indicator" href="javascript:scrollToAnchor('career-highlights');" data-toggle="tooltip" data-placement="left" title="Experiencia" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
-    </div>
-
-    <div class="section-indicator">
-        <a id="education-section-indicator" href="javascript:scrollToAnchor('education');" data-toggle="tooltip" data-placement="left" title="Formacion" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
-    </div>
-
-    <div class="section-indicator">
-        <a id="contact-section-indicator" href="javascript:scrollToAnchor('contact');" data-toggle="tooltip" data-placement="left" title="Contacto" onclick="javascript:toolTipReset()"><i class="far fa-circle"></i></a>
-    </div>
-
-  </div>
-
-  <!-- floating scroll down inviter -->
-
-  <div class="scroll-down-navigator">
-
-    <div>
-        <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="Abajo" onclick="javascript:toolTipReset()">
-        <span class="tcon-indicator" aria-label="Scroll down" aria-hidden="true">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
-            <path class="a3" d="M3,3l13,10l13-10"></path>
-            <path class="a2" d="M3,23l13,10l13-10"></path>
-            <path class="a1" d="M3,43l13,10l13-10"></path>
-            </svg>
-        </span>
-        </a>
-    </div>
-
-    <div class="scroll-down-plane" aria-label="Descend to the bottom!" aria-hidden="true">
-        <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left" title="Ir al final" onclick="javascript:toolTipReset()"><i class="fas fa-plane-arrival"></i></a>
-    </div>
-
-  </div>
-
-  <!-- end of navigation bar -->
-
-  <div id="toggle-dark-mode" class="toggle-dark-mode">
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="toggle-dark-mode">
-        <label class="form-check-label" for="toggle-dark-mode"><p class="page-subtitle.dark-mode">Modo claro</p></label>
-      </div>  
-  </div>
-
-  <a name="bio"></a>
-  <div id="bio" class="container section-visual-boundry">
-    <div class="row justify-content-center">
-      <div class="hero-div col-8 col-sm-4 col-md-4" >
-        <img class="hero" src="./images/AGV_Foto_CV.jpg" alt="portrait" />
-      </div>
-      <div class="col-12 col-sm-8 col-md-8">
-        <p class="page-title">Alejandro Gonzalez</p>
-        <p class="page-subtitle">Busco plazas de docente FP en Informática. También roles de desarrollo Junior / Mid Level en .NET, Mobile, FullStack.</p>
-        <ul>
-            <li>Experiencia como docente y tutor en FP reglada (DAM, DAW y ASIR) desde 2024.</li>
-            <li>Experiencia en entorno <i>startup</i> durante mis prácticas del Grado Superior.</li>
-            <li>Desarrollador de software en el ámbito académico: proyectos guiados para estudiantes (.NET, Android nativo, PHP), Python y C.</li>
-        </ul>
-    </div>
-
-  <hr class="hr-separator"/>
-
-<a name="portfolio"></a>
-<p id="portfolio" class="section-heading section-visual-boundry">Proyectos</p>
-
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/androidbooklist.jpg" class="card-img-top" alt="App lista de lectura">
-            <div class="card-body">
-                <h5 class="card-title">Lista de lectura</h5>
-                <p class="card-text">Prototipo de app de Biblioteca Virtual en Android nativo (Kotlin + JetPack Compose). Patrón MVC, persistencia con Room.</p>
-                <a href="https://github.com/Metalex84/AndroidBooklist" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-            </div>
+        <div class="to-top-cloud" aria-label="Ir al inicio" aria-hidden="true">
+            <a href="javascript:scrollToAnchor('top-of-document')" data-toggle="tooltip" data-placement="left"
+                title="Ir al inicio" onclick="javascript:toolTipReset()"><i class="fas fa-plane-departure"></i></a>
         </div>
-    </div>
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/androidbazar.png" class="card-img-top" alt="App e-Commerce">
-            <div class="card-body">
-                <h5 class="card-title">Android Bazar</h5>
-                <p class="card-text">Prototipo de app e-Commerce en Android nativo (Kotlin + JetPack Compose). Patrón MVC, persistencia con Room.</p>
-                <a href="https://github.com/Metalex84/AndroidBazar" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-            </div>
+
+        <div>
+            <a href="javascript:scrollToPreviousSection()">
+                <span class="tcon-indicator" aria-label="Prev section" aria-hidden="true" data-toggle="tooltip"
+                    data-placement="left" title="Arriba" onclick="javascript:toolTipReset()">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+                        <path class="a1" d="M3,13l13-10l13,10"></path>
+                        <path class="a2" d="M3,33l13-10l13,10"></path>
+                        <path class="a3" d="M3,53l13-10l13,10"></path>
+                    </svg>
+                </span>
+            </a>
         </div>
+
     </div>
-    <div class="col bm-2">
-        <div class="card h-100">
-            <a name="pfc"></a>
-            <img src="./images/linkaut.png" class="card-img-top" alt="LinkedIn Automator">
-            <div class="card-body">
-                <h5 class="card-title">LinkedIn Automator</h5>
-                <p class="card-text">Bot Scrapper de LinkedIn con interfaz web (Python + Selenium + Flask) para visitar perfiles y añadir contactos. Pensado para automatización de tareas de marketing digital.</p>
-                <a href="https://github.com/Metalex84/linkedin_automator" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-            </div>
+
+    <!-- floating section indicators -->
+
+    <div class="section-indicators-block">
+
+        <div class="section-indicator">
+            <a id="bio-section-indicator" href="#" data-toggle="tooltip" data-placement="left" title="Inicio"
+                onclick="javascript:toolTipReset()"><i class="fas fa-circle"></i></a>
+        </div>
+
+        <div class="section-indicator">
+            <a id="portfolio-section-indicator" href="javascript:scrollToAnchor('portfolio');" data-toggle="tooltip"
+                data-placement="left" title="Porfolio" onclick="javascript:toolTipReset()"><i
+                    class="far fa-circle"></i></a>
+        </div>
+
+        <div class="section-indicator">
+            <a id="skill-summary-section-indicator" href="javascript:scrollToAnchor('skill-summary');"
+                data-toggle="tooltip" data-placement="left" title="Habilidades" onclick="javascript:toolTipReset()"><i
+                    class="far fa-circle"></i></a>
+        </div>
+
+        <div class="section-indicator">
+            <a id="career-highlights-section-indicator" href="javascript:scrollToAnchor('career-highlights');"
+                data-toggle="tooltip" data-placement="left" title="Experiencia" onclick="javascript:toolTipReset()"><i
+                    class="far fa-circle"></i></a>
+        </div>
+
+        <div class="section-indicator">
+            <a id="education-section-indicator" href="javascript:scrollToAnchor('education');" data-toggle="tooltip"
+                data-placement="left" title="Formacion" onclick="javascript:toolTipReset()"><i
+                    class="far fa-circle"></i></a>
+        </div>
+
+        <div class="section-indicator">
+            <a id="contact-section-indicator" href="javascript:scrollToAnchor('contact');" data-toggle="tooltip"
+                data-placement="left" title="Contacto" onclick="javascript:toolTipReset()"><i
+                    class="far fa-circle"></i></a>
+        </div>
+
+    </div>
+
+    <!-- floating scroll down inviter -->
+
+    <div class="scroll-down-navigator">
+
+        <div>
+            <a href="javascript:scrollToNextSection()" data-toggle="tooltip" data-placement="left" title="Abajo"
+                onclick="javascript:toolTipReset()">
+                <span class="tcon-indicator" aria-label="Scroll down" aria-hidden="true">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 58">
+                        <path class="a3" d="M3,3l13,10l13-10"></path>
+                        <path class="a2" d="M3,23l13,10l13-10"></path>
+                        <path class="a1" d="M3,43l13,10l13-10"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <div class="scroll-down-plane" aria-label="Descend to the bottom!" aria-hidden="true">
+            <a href="javascript:scrollToAnchor('bottom-of-document')" data-toggle="tooltip" data-placement="left"
+                title="Ir al final" onclick="javascript:toolTipReset()"><i class="fas fa-plane-arrival"></i></a>
+        </div>
+
+    </div>
+
+    <!-- end of navigation bar -->
+
+    <div id="toggle-dark-mode" class="toggle-dark-mode">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="toggle-dark-mode">
+            <label class="form-check-label" for="toggle-dark-mode">
+                <p class="page-subtitle.dark-mode">Modo claro</p>
+            </label>
         </div>
     </div>
 
-        <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/PhotoFilter.jpg" class="card-img-top" alt="PhotoFilter">
-            <div class="card-body">
-                <h5 class="card-title">PhotoFilter</h5>
-                <p class="card-text">Aplicación de escritorio que permite aplicar filtros básicos a imágenes manipulando los valores RGB de los píxeles. Codificada en Java Swing y compilada con Maven.</p>
-                <a href="https://github.com/Metalex84/PhotoFilter" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
+    <a name="bio"></a>
+    <div id="bio" class="container section-visual-boundry">
+        <div class="row justify-content-center">
+            <div class="hero-div col-8 col-sm-4 col-md-4">
+                <img class="hero" src="./images/AGV_Foto_CV.jpg" alt="portrait" />
             </div>
-        </div>
-    </div>
-
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/y2m.jpg" class="card-img-top" alt="Youtube2MP3">
-            <div class="card-body">
-                <h5 class="card-title">Youtube2MP3</h5>
-                <p class="card-text">Un experimento de <i>vibe-coding</i> y aún en desarrollo. Extrae el audio de vídeos de YouTube y lo guarda en archivos MP3. Está escrita en Python, cuenta con versión CLI y Web y se facilita el despliegue a través de Docker. Como uso docente, sirve para explicar programación multihilo y manejo de contenedores.</p>
-                <a href="https://github.com/Metalex84/YouTube2MP3" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
+            <div class="col-12 col-sm-8 col-md-8">
+                <p class="page-title">Alejandro Gonzalez</p>
+                <p class="page-subtitle">Busco plazas de docente FP en Informática. También roles de desarrollo Junior /
+                    Mid Level en .NET, Mobile, FullStack.</p>
+                <ul>
+                    <li>Experiencia como docente y tutor en FP reglada (DAM, DAW y ASIR) desde 2024.</li>
+                    <li>Experiencia en entorno <i>startup</i> durante mis prácticas del Grado Superior.</li>
+                    <li>Desarrollador de software en el ámbito académico: proyectos guiados para estudiantes (.NET,
+                        Android nativo, PHP), Python y C.</li>
+                </ul>
             </div>
-        </div>
-    </div>
 
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/invoice.jpg" class="card-img-top" alt="TurboFactura">
-            <div class="card-body">
-                <h5 class="card-title">TurboFactura</h5>
-                <p class="card-text">Un prototipo de software de facturación. Es una aplicación .NET para Windows codificada en C#. Sirve como apoyo docente en el diseño de interfaces gráficas en entornos de escritorio.</p>
-                <a href="https://github.com/Metalex84/TurboFactura" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
+            <hr class="hr-separator" />
+
+            <a name="portfolio"></a>
+            <p id="portfolio" class="section-heading section-visual-boundry">Proyectos</p>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/androidbooklist.jpg" class="card-img-top" alt="App lista de lectura">
+                        <div class="card-body">
+                            <h5 class="card-title">Lista de lectura</h5>
+                            <p class="card-text">Prototipo de app de Biblioteca Virtual en Android nativo (Kotlin +
+                                JetPack Compose). Patrón MVC, persistencia con Room.</p>
+                            <a href="https://github.com/Metalex84/AndroidBooklist" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/androidbazar.png" class="card-img-top" alt="App e-Commerce">
+                        <div class="card-body">
+                            <h5 class="card-title">Android Bazar</h5>
+                            <p class="card-text">Prototipo de app e-Commerce en Android nativo (Kotlin + JetPack
+                                Compose). Patrón MVC, persistencia con Room.</p>
+                            <a href="https://github.com/Metalex84/AndroidBazar" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <a name="pfc"></a>
+                        <img src="./images/linkaut.png" class="card-img-top" alt="LinkedIn Automator">
+                        <div class="card-body">
+                            <h5 class="card-title">LinkedIn Automator</h5>
+                            <p class="card-text">Bot Scrapper de LinkedIn con interfaz web (Python + Selenium + Flask)
+                                para visitar perfiles y añadir contactos. Pensado para automatización de tareas de
+                                marketing digital.</p>
+                            <a href="https://github.com/Metalex84/linkedin_automator" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/PhotoFilter.jpg" class="card-img-top" alt="PhotoFilter">
+                        <div class="card-body">
+                            <h5 class="card-title">PhotoFilter</h5>
+                            <p class="card-text">Aplicación de escritorio que permite aplicar filtros básicos a imágenes
+                                manipulando los valores RGB de los píxeles. Codificada en Java Swing y compilada con
+                                Maven.</p>
+                            <a href="https://github.com/Metalex84/PhotoFilter" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/y2m.jpg" class="card-img-top" alt="Youtube2MP3">
+                        <div class="card-body">
+                            <h5 class="card-title">Youtube2MP3</h5>
+                            <p class="card-text">Un experimento de <i>vibe-coding</i> y aún en desarrollo. Extrae el
+                                audio de vídeos de YouTube y lo guarda en archivos MP3. Está escrita en Python, cuenta
+                                con versión CLI y Web y se facilita el despliegue a través de Docker. Como uso docente,
+                                sirve para explicar programación multihilo y manejo de contenedores.</p>
+                            <a href="https://github.com/Metalex84/YouTube2MP3" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/invoice.jpg" class="card-img-top" alt="TurboFactura">
+                        <div class="card-body">
+                            <h5 class="card-title">TurboFactura</h5>
+                            <p class="card-text">Un prototipo de software de facturación. Es una aplicación .NET para
+                                Windows codificada en C#. Sirve como apoyo docente en el diseño de interfaces gráficas
+                                en entornos de escritorio.</p>
+                            <a href="https://github.com/Metalex84/TurboFactura" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/qrgen.png" class="card-img-top" alt="QR Generator">
+                        <div class="card-body">
+                            <h5 class="card-title">QR Generator</h5>
+                            <p class="card-text">Un servicio web que genera codigos QR a partir de una URL. Hecho en
+                                Python + Flask y desplegado en producción sobre Render como ejemplo de aplicación
+                                FullStack sencilla.</p>
+                            <a href="https://github.com/Metalex84/qr_generate" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                            <a href="https://qr-generate-omcy.onrender.com/" target="_blank"
+                                class="btn btn-primary">Pruébalo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/ft_printf.png" class="card-img-top" alt="printf">
+                        <div class="card-body">
+                            <h5 class="card-title">printf</h5>
+                            <p class="card-text">Réplica de implementación propia de la función "printf" del estándar de
+                                C, que realicé durante mi etapa en <strong>42 Madrid</strong>. Haciéndolo, aprendí el
+                                concepto de las <strong>funciones variádicas</strong> y la salida estándar con distintos
+                                formatos.</p>
+                            <a href="https://github.com/Metalex84/ft_printf" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col bm-2">
+                    <div class="card h-100">
+                        <img src="./images/minitalk.png" class="card-img-top" alt="minitalk">
+                        <div class="card-body">
+                            <h5 class="card-title">minitalk</h5>
+                            <p class="card-text">Aplicación doble de consola escrita en C. Implementa una comunicación
+                                cliente - servidor, también realizado durante mi etapa en <strong>42 Madrid</strong>. Me
+                                sirvió para profundizar en las señales UNIX y la comunicación entre procesos.</p>
+                            <a href="https://github.com/Metalex84/minitalk" target="_blank"
+                                class="btn btn-primary">Página del proyecto en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </div>
-    </div>
 
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/qrgen.png" class="card-img-top" alt="QR Generator">
-            <div class="card-body">
-                <h5 class="card-title">QR Generator</h5>
-                <p class="card-text">Un servicio web que genera codigos QR a partir de una URL. Hecho en Python + Flask y desplegado en producción sobre Render como ejemplo de aplicación FullStack sencilla.</p>
-                <a href="https://github.com/Metalex84/qr_generate" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-                <a href="https://qr-generate-omcy.onrender.com/" target="_blank" class="btn btn-primary">Pruébalo</a>
-            </div>
-        </div>
-    </div>
+            <hr class="hr-separator" />
 
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/ft_printf.png" class="card-img-top" alt="printf">
-            <div class="card-body">
-                <h5 class="card-title">printf</h5>
-                <p class="card-text">Réplica de implementación propia de la función "printf" del estándar de C, que realicé durante mi etapa en <strong>42 Madrid</strong>. Haciéndolo, aprendí el concepto de las <strong>funciones variádicas</strong> y la salida estándar con distintos formatos.</p>
-                <a href="https://github.com/Metalex84/ft_printf" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-            </div>
-        </div>
-    </div>
+            <a name="skill-summary"></a>
+            <p id="skill-summary" class="section-heading section-visual-boundry">Stack tecnológico</p>
 
-    <div class="col bm-2">
-        <div class="card h-100">
-            <img src="./images/minitalk.png" class="card-img-top" alt="minitalk">
-            <div class="card-body">
-                <h5 class="card-title">minitalk</h5>
-                <p class="card-text">Aplicación doble de consola escrita en C. Implementa una comunicación cliente - servidor, también realizado durante mi etapa en <strong>42 Madrid</strong>. Me sirvió para profundizar en las señales UNIX y la comunicación entre procesos.</p>
-                <a href="https://github.com/Metalex84/minitalk" target="_blank" class="btn btn-primary">Página del proyecto en GitHub</a>
-            </div>
-        </div>
-    </div>
+                <h3 class="section-subheading">Lenguajes de propósito general</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="Lenguajes_general"
+                    onclick="javascript:toolTipReset()">
+                    
+                    <span class="keyword-magnet">Python</span>
+                    <span class="keyword-magnet">Java</span>
+                    <span class="keyword-magnet">Kotlin (Android nativo)</span>
+                    <span class="keyword-magnet">C# (.NET)</span>
+                    <span class="keyword-magnet">C</span>
+                </p>
+
+                <h3 class="section-subheading">Web, marcas</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="web_marks"
+                    onclick="javascript:toolTipReset()">
+                    
+                    <span class="keyword-magnet">HTML</span>
+                    <span class="keyword-magnet">CSS</span>
+                    <span class="keyword-magnet">PHP</span>
+                    <span class="keyword-magnet">MarkDown</span>
+                </p>
+
+                <h3 class="section-subheading">Automatización y CLI</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="automation_cli" 
+                    onclick="javascript:toolTipReset()">
+
+                    <span class="keyword-magnet">Bash</span>
+                    <span class="keyword-magnet">PowerShell</span>
+                </p>
+
+                <h3 class="section-subheading">Frameworks y bibliotecas</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="frameworks_lib" 
+                    onclick="javascript:toolTipReset()">
+    
+                    <span class="keyword-magnet">Selenium</span>
+                    <span class="keyword-magnet">Flask</span>
+                    <span class="keyword-magnet">Windows Forms .NET</span>
+                    <span class="keyword-magnet">WPF .NET</span>
+                </p>
+
+                <h3 class="section-subheading">Bases de Datos</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="databases"
+                    onclick="javascript:toolTipReset()">
+
+                    <span class="keyword-magnet">SQLite</span>
+                    <span class="keyword-magnet">Room</span>
+                    <span class="keyword-magnet">MySQL</span>
+                    <span class="keyword-magnet">SQL Server</span>
+                    <span class="keyword-magnet">PostgreSQL - Supabase</span>
+                    <span class="keyword-magnet">MongoDB - Atlas</span>
+                </p>
+
+                <h3 class="section-subheading">Control de versiones y dependencias</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="version_dependencies"
+                    onclick="javascript:toolTipReset()">
+    
+                    <span class="keyword-magnet">Git</span>
+                    <span class="keyword-magnet">Makefile</span>
+                    <span class="keyword-magnet">Maven</span>
+                    <span class="keyword-magnet">Gradle</span>
+                </p>
+
+                <h3 class="section-subheading">Infraestructura y despliegue</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="infrastructure_deploy"
+                    onclick="javascript:toolTipReset()">
+
+                    <span class="keyword-magnet">Docker</span>
+                    <span class="keyword-magnet">GitHub</span>
+                    <span class="keyword-magnet">Vercel</span>
+                    <span class="keyword-magnet">Render</span>
+                    <span class="keyword-magnet">Heroku</span>
+                </p>
+
+                
+                <h3 class="section-subheading">IDE's</h3>
+                <p data-toggle="tooltip" data-placement="bottom" title="ides"
+                    onclick="javascript:toolTipReset()">
+          
+                    <span class="keyword-magnet">Android Studio</span>
+                    <span class="keyword-magnet">VS Code</span>
+                    <span class="keyword-magnet">Microsoft Visual Studio</span>
+                    <span class="keyword-magnet">Intelli-J</span>
+                    <span class="keyword-magnet">Eclipse</span>
+                </p>     
+
+            </p>
 
 
-</div>
+            <hr class="hr-separator" />
 
-<hr class="hr-separator" />
+            <a name="career-highlights"></a>
+            <p id="career-highlights" class="section-heading section-visual-boundry">Experiencia profesional</p>
 
-<a name="skill-summary"></a>
-<p id="skill-summary" class="section-heading section-visual-boundry">Resumen de habilidades</p>
+            <p class="section-subheading">Docente de Formación Profesional en Linkia FP (2024 - presente)</p>
+            <p class="section-small-heading">Madrid</p>
+            <ul>
+                <li>
+                    Imparto módulos de primer y segundo curso de los CFGS DAM/DAW y ASIR de forma presencial, 
+                    como <strong>Programación Multimedia y Dispositivos Móviles</strong>, <strong>Administración de Sistemas Operativos</strong>
+                    <strong>Desarrollo de Interfaces</strong>, <strong>Programación de Servicios y Procesos</strong>,
+                    <strong>Acceso a Datos</strong>, <strong>Implantación de Aplicaciones Web</strong>, <strong>Sistemas de Gestión Empresarial</strong>,
+                    <strong>Programación en Python</strong>, <strong>Fundamentos de Cloud Computing</strong>, <strong>Entornos de Desarrollo</strong>.
+                </li>
+                <li>
+                    Además, <strong>tutorizo</strong> prácticas en empresa (FCT, FFE) y proyectos finales.
+                </li>
+                <li>Bajo mi tutela, mis alumnos experimentan un crecimiento significativo en sus habilidades de desarrollo de software y pensamiento lógico.
+                    Se puede constatar fácilmente su elevado grado de autonomía y comprensión de los conceptos.
+                </li>
+                <li>
+                    Con mi trabajo diario, les consigo inculcar la importancia del <strong>autoaprendizaje</strong>, lo cual les hace llegar mucho más lejos que los objetivos estándar de la enseñanza reglada.
+                    Todo esto se ve reforzado por la <strong>elevada calidad de los proyectos que presentan</strong> y la madurez que alcanzan durante su etapa formativa a mi cargo.
+                </li>
+            </ul>
 
-<p data-toggle="tooltip" data-placement="bottom"
-   title="Stack tecnológico"
-   onclick="javascript:toolTipReset()">
-    <span class="keyword-magnet">Git</span>
-    <span class="keyword-magnet">GitHub</span>
-    <span class="keyword-magnet">Java</span>        
-    <span class="keyword-magnet">Maven</span>
-    <span class="keyword-magnet">Kotlin</span>
-    <span class="keyword-magnet">C</span>
-    <span class="keyword-magnet">C#</span>
-    <span class="keyword-magnet">Python</span>
-    <span class="keyword-magnet">HTML</span>
-    <span class="keyword-magnet">CSS</span>
-    <span class="keyword-magnet">Bash</span>
-    <span class="keyword-magnet">PowerShell</span>
-</p>
+            <p class="section-subheading">CTO / Desarrollador (Prácticas) en entorno <i>startup</i> Horeca Rentable (2024)</p>
+            <p class="section-small-heading">Las Rozas (Madrid) - En remoto</p>
+            <ul>
+                <li>Reportando a Dirección, desarrollé íntegramente y desde cero la aplicación web <b><a
+                            href="#portfolio" class="link">LinkedIn Automator</a></b>, para uso interno del equipo de
+                    Ventas</li>
+                <li>También desempeñé el rol de CTO, encargándome del mantenimiento de la plataforma y el dominio, y gestionando todos los buzones de correo.</li>
+                <li>Realicé una migración del correo electrónico corporativo y contribuí al posicionamiento SEO del
+                    sitio web.</li>
+            </ul>
 
-<ul>
-  <li>Desarrollador de apps móviles en Android nativo</li>
-  <li>Desarrollador de aplicaciones web</li>
-  <li>Desarrollador de aplicaciones de escritorio</li>
-</ul>
+            <p class="section-subheading">CopyWriter Freelance (2020 - 2022)</p>
+            <p class="section-small-heading">En remoto</p>
+            <ul>
+                <li>Creé contenido con el objetivo de proporcionar posicionamiento orgánico a los anunciantes, abordando diversas temáticas:
+                    Tecnología, Finanzas, Legal, Veterinaria, Psicología, RRHH…</li>
+                <li>Mi trabajo incluía la investigación de palabras clave, redacción de artículos optimizados y la
+                    adaptación del tono y estilo según el público objetivo.</li>
+                <li>Mi perfil docente y tecnológico se vio claramente reforzado durante esta etapa, en la que aprendí a redactar
+                    documentación técnica en distintos registros, guías paso a paso y contenidos didácticos con intención SEO.</li>
+            </ul>
 
-<hr class="hr-separator" />
+            <p class="section-subheading">Product Marketing Manager (2017 - 2019) en GTI (V-Valley)</p>
+            <p class="section-small-heading">San Fernando de Henares (Madrid)</p>
+            <ul>
+                
+                <li>Reportando al director de división, contribuí a la elaboración y ejecución del Plan de Marketing de Microsoft CSP.</li>
+                <li>También lideré el lanzamiento de la línea de servicios de SKYKICK a todos los niveles (operaciones, comercial y soporte).</li>
+                <li>Durante ese periodo, trabajé estrechamente con el Departamento Comercial, dirigiendo las acciones de generación de demanda a partners estratégicos.</li>
+                
+            </ul>
 
-<a name="career-highlights"></a>
-<p id="career-highlights" class="section-heading section-visual-boundry">Experiencia profesional</p>
+            <hr class="hr-separator" />
 
-<p class="section-subheading">Docente de Formación Profesional en Linkia FP</p>
-<p class="section-small-heading">Madrid</p>
-<ul>
-    <li>Realizo funciones docentes en módulos de formación profesional de DAM, DAW y ASIR.</li>
-    <li>También tutorizo la Formación en Centros de Trabajo y los Proyectos Integrados.</li>
-</ul>
+            <a name="education"></a>
 
-<p class="section-subheading">Programador autodidacta</p>
-<p class="section-small-heading">Madrid</p>
-<ul>
-    <li>Trabajé en pequeños proyectos para practicar lo aprendido en cursos y formación reglada</li>
-    <li>Utilicé varios IDE en sistemas distintos (MacOS, Windows, Ubuntu, Debian...) para acostumbrarme a varios entornos de programación.</li>
-    <li>Me habitué al control de versiones con Git y utilizo <a href="https://github.com/Metalex84" target="_blank" class="link">GitHub</a> para mostrar mi trabajo y mover mis proyectos entre plataformas.</li>
-</ul>
+            <p id="education" class="section-heading section-visual-boundry">Formación</p>
 
-<p class="section-subheading">Web Developer (Prácticas) en Horeca Rentable (startup)</p>
-<p class="section-small-heading">Las Rozas (Madrid) - En remoto</p>
-<ul>
-    <li>Reportando a Dirección, desarrollé íntegramente y desde cero la aplicación web <b><a href="#portfolio" class="link">LinkedIn Automator</a></b>, para uso interno del equipo de Ventas</li>
-    <li>También desempeñé el rol de CTO, encargándome del mantenimiento de la plataforma y el dominio</li>
-    <li>Realicé una migración del correo electrónico corporativo y contribuí al posicionamiento SEO del sitio web.</li>
-</ul>
+            <p class="section-subheading">CESUR Plaza Elíptica, Madrid</p>
+            <p class="section-small-heading">Técnico Superior - Desarrollo de Aplicaciones Multiplataforma</p>
+            <p><a href="./assets/cesur_academic_alex.pdf" class="link" target="_blank" data-toggle="tooltip"
+                    data-placement="bottom" title="Expediente académico" onclick="javascript:toolTipReset()"">Expediente académico</a></p>
 
-<p class="section-subheading">CopyWriter Freelance</p>
-<p class="section-small-heading">100% en remoto</p>
-<ul>
-    <li>Creé contenido con intención de posicionamiento SEO para anunciantes, abordando diversas temáticas: Tecnología, Finanzas, Legal, Veterinaria, Psicología, RRHH…</li>
-</ul>
+<p class=" section-subheading">IMPULSO 06</p>
+            <p class="section-small-heading">Certificado de Profesionalidad SSCE0110 - Habilitación para la Docencia en
+                grados A, B y C del sistema de Formación Profesional.</p>
+            <p><a href="https://1drv.ms/f/c/38535413ded55c10/IgB3MttM3p-yTa5vkYvcCMHEAehxXigcsKJaKYPXQc3XJtA?e=ZTVT0X"
+                    class="link" target="_blank" data-toggle="tooltip" data-placement="bottom"
+                    title="Certificados módulos formativos" onclick="javascript:toolTipReset()"">Certificados de los módulos formativos</a></p>
 
-<hr class="hr-separator" />
+<p class=" section-subheading">IBM - BeJOB</p>
+            <p class="section-small-heading">Introducción a la Programación - Python</p>
+            <p><a href="./assets/diploma_Python.pdf" class="link" target="_blank" data-toggle="tooltip"
+                    data-placement="bottom" title="Diploma BeJOB" onclick="javascript:toolTipReset()"">Diploma BeJOB</a></p>
 
-<a name="education"></a>
+<p class=" section-subheading">Harvard Online</p>
+            <p class="section-small-heading">CS50 - Introduction to Computer Science</p>
+            <p><a href="https://courses.edx.org/certificates/bee730002f474fda92406d16c1fa14df" class="link"
+                    target="_blank" data-toggle="tooltip" data-placement="bottom" title="Certificado oficial EDX"
+                    onclick="javascript:toolTipReset()"">Certificado oficial EDX</a></p>
 
-<p id="education" class="section-heading section-visual-boundry">Formación</p>
+<hr class=" hr-separator" />
 
-<p class="section-subheading">CESUR Plaza Elíptica, Madrid</p>
-<p class="section-small-heading">Técnico Superior - Desarrollo de Aplicaciones Multiplataforma</p>
-<p><a href="./assets/cesur_academic_alex.pdf" class="link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Expediente académico" onclick="javascript:toolTipReset()"">Expediente académico</a></p>
+                <a name="contact"></a>
+            <p id="contact" class="section-heading section-visual-boundry">Contacto</p>
 
-<p class="section-subheading">IMPULSO 06</p>
-<p class="section-small-heading">Certificado de Profesionalidad SSCE0110 - Habilitación para la Docencia en grados A, B y C del sistema de Formación Profesional.</p>
-<p><a href="https://1drv.ms/f/c/38535413ded55c10/IgB3MttM3p-yTa5vkYvcCMHEAehxXigcsKJaKYPXQc3XJtA?e=ZTVT0X" class="link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Certificados módulos formativos" onclick="javascript:toolTipReset()"">Certificados de los módulos formativos</a></p>
-
-<p class="section-subheading">IBM - BeJOB</p>
-<p class="section-small-heading">Introducción a la Programación - Python</p>
-<p><a href="./assets/diploma_Python.pdf" class="link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Diploma BeJOB" onclick="javascript:toolTipReset()"">Diploma BeJOB</a></p>
-
-<p class="section-subheading">Harvard Online</p>
-<p class="section-small-heading">CS50 - Introduction to Computer Science</p>
-<p><a href="https://courses.edx.org/certificates/bee730002f474fda92406d16c1fa14df" class="link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Certificado oficial EDX" onclick="javascript:toolTipReset()"">Certificado oficial EDX</a></p>
-
-<hr class="hr-separator" />
-
-<a name="contact"></a>
-<p id="contact" class="section-heading section-visual-boundry">Contacto</p>
-
-<p class="section-small-heading">Email: <a href="mailto:agonzalez.venegas@outlook.com" class="link" data-toggle="tooltip" data-placement="bottom" title="Envíame un email" onclick="javascript:toolTipReset()">agonzalez.venegas@outlook.com</a></p>
-<p class="section-small-heading">LinkedIn: <a href="https://linkedin.com/in/alejandro-gonzalez-venegas" class="link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Mi perfil en LinkedIn" onclick="javascript:toolTipReset()"">Alejandro Gonzalez Venegas</a></p>
+            <p class="section-small-heading">Email: <a href="mailto:agonzalez.venegas@outlook.com" class="link"
+                    data-toggle="tooltip" data-placement="bottom" title="Envíame un email"
+                    onclick="javascript:toolTipReset()">agonzalez.venegas@outlook.com</a></p>
+            <p class="section-small-heading">LinkedIn: <a href="https://linkedin.com/in/alejandro-gonzalez-venegas"
+                    class="link" target="_blank" data-toggle="tooltip" data-placement="bottom"
+                    title="Mi perfil en LinkedIn" onclick="javascript:toolTipReset()"">Alejandro Gonzalez Venegas</a></p>
   
-<hr class="hr-separator" />
+<hr class=" hr-separator" />
 
-<!-- <img class="hero" src="images/footer_banner.jpg" alt="banner" /> -->
+                <!-- <img class="hero" src="images/footer_banner.jpg" alt="banner" /> -->
 
-<a name="bottom-of-document"></a>
+                <a name="bottom-of-document"></a>
 </body>
 
 <footer>
@@ -334,9 +485,14 @@
 </footer>
 
 <!-- JQuery Scripts -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script><!-- Our codes -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script><!-- Our codes -->
 <script src="js/main.js"></script>
 <script src="js/nav.js"></script>
